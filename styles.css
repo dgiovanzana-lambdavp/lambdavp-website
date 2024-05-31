@@ -1,0 +1,9 @@
+.left::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    border-right: 1px solid #F2F2F2;
+}
