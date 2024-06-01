@@ -3,6 +3,9 @@
 <head>
     <title>My Website</title>
     <style>
+        html {
+            font-size: 18px; /* Base font size */
+        }
         body {
             background-color: #2c4760;
             color: white;
@@ -26,7 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 40%;
             padding: 20px;
         }
         .left, .right {
@@ -44,13 +47,47 @@
             height: 60%;
             border-right: 1px solid #F2F2F2;
         }
-        .left h1, .right h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .left h2, .right h2 {
+            font-size: 2rem; /* Adjusted font size */
+            margin-bottom: 20px;
         }
         .left p, .right p {
-            font-size: 18px;
+            font-size: 1.25rem; /* Adjusted font size */
             color: #F2F2F2;
+        }
+
+        /* Additional styles for text below headings */
+        .left p, .right p {
+            font-size: 1.1rem; /* Slightly larger font size */
+            margin-top: 5px; /* Adjust spacing */
+        }
+
+        /* Additional media queries for finer control */
+        @media (max-width: 1200px) {
+            .left h2, .right h2 {
+                font-size: 1.8rem;
+            }
+            .left p, .right p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .left h2, .right h2 {
+                font-size: 1.6rem;
+            }
+            .left p, .right p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .left h2, .right h2 {
+                font-size: 1.4rem;
+            }
+            .left p, .right p {
+                font-size: 0.8rem;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
